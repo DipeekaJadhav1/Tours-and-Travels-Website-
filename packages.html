@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tour Packages - Travel Explorer</title>
+  <!-- Open Graph -->
+<meta property="og:title" content="Royal Rajasthan Tour – Travel Explorer" />
+<meta property="og:description" content="Join our 7‑day cultural journey through Rajasthan’s palaces, lakes & heritage." />
+<meta property="og:url" content="https://www.yoursite.com/royal-rajasthan.html" />
+<meta property="og:image" content="https://www.yoursite.com/images/rajasthan-share.jpg" />
+<meta property="og:site_name" content="Travel Explorer" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Royal Rajasthan Tour – Travel Explorer" />
+<meta name="twitter:description" content="Join our 7‑day cultural journey through Rajasthan’s palaces, lakes & heritage." />
+<meta name="twitter:image" content="https://www.yoursite.com/images/rajasthan-share.jpg" />
+
+<meta name="description" content="Explore exciting tour packages by Travel Explorer. Filter by destination, price, or duration.">
+<meta property="og:title" content="Tour Packages – Travel Explorer">
+<meta property="og:description" content="Find your perfect travel package from our curated list of tours across India and beyond.">
+<meta property="og:image" content="images/package-hero.jpg">
+
+  <meta name="description" content="Your 150‑160 char page summary with primary keywords." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.yoursite.com/current-page.html" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body class="packages-page">
+<div id="loading-spinner">
+  <div class="spinner"></div>
+</div>
+
+<!-- HERO SECTION WITH VIDEO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="hero.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay">
+    <nav class="hero-nav">
+      <a href="index.html">Home</a>
+      <a href="packages.html" class="active">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1>Our Tour Packages</h1>
+  </div>
+</section>
+
+<!-- FILTER SECTION -->
+<section class="filters">
+  <div class="container">
+    <h3>Filter Packages</h3>
+    <div class="filter-controls">
+      <select name="location" id="location">
+        <option value="">All Locations</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="mysore">Mysore</option>
+        <option value="amritsar">Amritsar</option>
+        <option value="agra">Agra</option>
+      </select>
+
+      <select name="price" id="price">
+        <option value="">All Prices</option>
+        <option value="low">Below ₹10,000</option>
+        <option value="mid">₹10,000 - ₹25,000</option>
+        <option value="high">Above ₹25,000</option>
+      </select>
+
+      <select name="duration" id="duration">
+        <option value="">All Durations</option>
+        <option value="short">1-3 Days</option>
+        <option value="medium">4-6 Days</option>
+        <option value="long">7+ Days</option>
+      </select>
+
+      <select name="rating" id="rating">
+        <option value="">All Ratings</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<!-- TOUR PACKAGES SECTION -->
+<section class="packages">
+  <div class="container">
+    <h2>Choose Your Adventure</h2>
+    <div class="package-grid">
+
+      <!-- Package 1 -->
+      <div class="package-card"data-location="rajasthan"
+     data-price="high"
+     data-duration="long"
+     data-rating="5">
+        <img src="images/Rajasthan.jpg" alt="Rajasthan Tour">
+        <h3>Royal Rajasthan</h3>
+        <p>Explore Jaipur, Udaipur & Jodhpur with palaces and lakes.</p>
+        <p><strong>Duration:</strong> 7 Days<br><strong>Price:</strong> ₹25,000</p>
+        <p><strong>Highlights:</strong> Forts, Culture, Lakes</p>
+
+        <button onclick="window.location.href='tour-detail.html'">View Details</button>
+      </div>
+      
+
+      <!-- Package 2 -->
+      <div class="package-card"data-location="mysore"
+     data-price="mid"
+     data-duration="medium"
+     data-rating="4">
+        <img src="images/Mysore.jpg" alt="Mysore Tour">
+        <h3>Southern Splendor</h3>
+        <p>5-day Mysore & Coorg trip full of lush views and local culture.</p>
+        <p><strong>Duration:</strong> 5 Days<br><strong>Price:</strong> ₹18,000</p>
+        <p><strong>Highlights:</strong> Forts, Culture, Lakes</p>
+
+        <button onclick="window.location.href='tour-detail.html'">View Details</button>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="package-card"data-location="Amritsar"
+     data-price="mid"
+     data-duration="medium"
+     data-rating="4">
+        <img src="images/Amritsar.jpg" alt="Amritsar Tour">
+        <h3>Spiritual North</h3>
+        <p>Golden Temple and Punjab heritage in this soulful journey.</p>
+        <p><strong>Duration:</strong> 4 Days<br><strong>Price:</strong> ₹15,000</p>
+        <p><strong>Highlights:</strong> Forts, Culture, Lakes</p>
+
+        <button onclick="window.location.href='tour-detail.html'">View Details</button>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="package-card"data-location="Agra"
+     data-price="low"
+     data-duration="short"
+     data-rating="3">
+        <img src="images/Agra.jpg" alt="Agra Tour">
+        <h3>Taj Mahal Experience</h3>
+        <p>Classic tour of Agra, Taj Mahal, and local cuisine walk.</p>
+        <p><strong>Duration:</strong> 3 Days<br><strong>Price:</strong> ₹10,000</p>
+        <p><strong>Highlights:</strong> Forts, Culture, Lakes</p>
+
+        <button onclick="window.location.href='tour-detail.html'">View Details</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Need Help Choosing a Package?</h2>
+  <button onclick="window.location.href='contact.html'">Talk to Our Experts</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Email: info@travelexplorer.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="tour-detail.html">Tour Detail Page</a></li>
+        <li><a href="about.html">About Us Page</a></li>
+        <li><a href="contact.html">Contact Page</a></li>
+        <li><a href="features.html">Optional Features</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+  const filters = {
+    location: "",
+    price: "",
+    duration: "",
+    rating: ""
+  };
+
+  const filterSelects = document.querySelectorAll('.filter-controls select');
+  const cards = document.querySelectorAll('.package-card');
+
+  filterSelects.forEach(select => {
+    select.addEventListener('change', () => {
+      filters[select.name] = select.value;
+      applyFilters();
+    });
+  });
+
+  function applyFilters() {
+    cards.forEach(card => {
+      const match =
+        (!filters.location || card.dataset.location === filters.location) &&
+        (!filters.price || card.dataset.price === filters.price) &&
+        (!filters.duration || card.dataset.duration === filters.duration) &&
+        (!filters.rating || card.dataset.rating === filters.rating);
+
+      card.style.display = match ? "block" : "none";
+    });
+  }
+</script>
+<script>
+  window.addEventListener("load", function () {
+    const spinner = document.getElementById("loading-spinner");
+    spinner.style.display = "none";
+  });
+</script>
+
+
+</body>
+</html>
